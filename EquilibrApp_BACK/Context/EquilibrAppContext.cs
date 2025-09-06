@@ -1,4 +1,5 @@
 ﻿using EquilibrApp_BACK.DTO;
+using EquilibrApp_BACK.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EquilibrApp_BACK.Context
@@ -26,5 +27,8 @@ namespace EquilibrApp_BACK.Context
         public DbSet<UsoPresupuestoDTO> UsoPresupuesto { get; set; } = null!;
         public DbSet<SetPresupuestoGlobalResult> SetPresupuestoGlobalResult { get; set; } = null!;
         public DbSet<UsoPresupuestoGlobalDTO> UsoPresupuestoGlobal { get; set; } = null!;
+        public DbSet<AlertaItem> AlertaItems { get; set; }
+        public DbSet<SpActionResult> SpActionResults { get; set; }
+
     }
 }
