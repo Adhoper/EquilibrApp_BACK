@@ -19,5 +19,9 @@ namespace EquilibrApp_BACK.Controllers
         {
             return Ok(await _Service.SetUsuario(model));
         }
+
+        [HttpPost("actualizar-usuario")]
+        public async Task<IActionResult> ActualizarUsuario(UpdateUsuario model)
+            => Ok(await _Service.ActualizarUsuario(model));
     }
 }

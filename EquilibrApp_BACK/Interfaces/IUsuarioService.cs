@@ -6,5 +6,6 @@ namespace EquilibrApp_BACK.Interfaces
     public interface IUsuarioService
     {
         Task<Response<SetUserResult>> SetUsuario(SetUsuario setUsuario);
+        Task<Response<UpdateUsuarioResult>> ActualizarUsuario(UpdateUsuario updateUsuario);
     }
 }
