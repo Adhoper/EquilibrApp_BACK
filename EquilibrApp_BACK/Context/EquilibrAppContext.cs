@@ -29,6 +29,7 @@ namespace EquilibrApp_BACK.Context
         public DbSet<UsoPresupuestoGlobalDTO> UsoPresupuestoGlobal { get; set; } = null!;
         public DbSet<AlertaItem> AlertaItems { get; set; }
         public DbSet<SpActionResult> SpActionResults { get; set; }
+        public virtual DbSet<UpdateUsuarioResult> UpdateUsuarioResult { get; set; } = null!;
 
     }
 }
